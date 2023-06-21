@@ -11,16 +11,4 @@ function reverseString(word) {
   }
 }
 
-function isPalindrome(word) {
-  if (typeof word !== "string" || /[^a-zA-Z0-9]/.test(word)) {
-    // checking if input is a string and is doesn't contain any characters that are not alphanumeric
-    return "Input needs to an alphanumerical string brother...";
-  } else {
-    return word.split("").reverse().join("") === word;
-  }
-}
-
-module.exports = {
-  reverseString,
-  isPalindrome,
-};
+module.exports = reverseString;
